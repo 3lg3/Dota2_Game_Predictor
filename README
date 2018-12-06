@@ -1,0 +1,24 @@
+Dota2 Game Predictor
+
+Introduction: 
+This program (python) uses severa Machine Learning algorithm to predict the win rate of one side (5 heroes) ina game with in total 10 heroes. It acts as a simplified version of DotaPlus.
+
+
+How to Run it:
+
+dataset folder:    dataset  
+source code folder: src
+
+
+1. install scikit-learn by 
+pip install -U scikit-learn
+in the terminal (assume numpy and scipy have been installed already)
+install matplotlib by 
+python -mpip install matplotlib
+
+2. run
+python dota2_classification.py
+in source directory(we've included the dataset in the 
+source directory to simplify the data loading process.)
+
+if the program is run remotely(eg. on SSH ), it might run into a problem where the graph could not be displayed and a corresponding error message would occur, in this case , comment the lines 260 - 266 out (disable the plt.show() part) to  solve the problem. 
